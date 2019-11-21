@@ -128,26 +128,36 @@ table {
 }
 nav {
   display: flex;
-  font-size: 22px;
   justify-content: space-between;
   padding: 1.6% 0;
 }
+nav a {
+  padding: 1vh;
+  background-color: #96c5b9;
+  background: 3vh;
+  height: 2.4vh;
+  color: #553555;
+  text-decoration: none;
+  font-size: 22px;
+}
+nav a h2 {
+  font-size: 2.2rem;
+  margin-left: 2%;
+}
 @media (max-width: 500px) {
   nav {
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
 }
-nav nav a {
-  color: #553555;
-  text-decoration: none;
-  padding: 2%;
-  font-size: 22px;
-}
-nav h2 {
-  font-size: 2.2rem;
-  color: #96c5b0;
-  margin-left: 2%;
+@media (max-width: 850px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
 }
 header {
   display: flex;
